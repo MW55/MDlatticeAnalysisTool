@@ -176,9 +176,9 @@ class Genetic_algorithm(object):
                     else:
                         print "not all MD simulations are finished, going to sleep for 10 min"
                         time.sleep(600)
-                        print "MD simulation finished, downloading and analysing Data"
-                        os.mkdir(project_folder + 'generation'
-                                + str(Genetic_algorithm.generation))
+                print "MD simulation finished, downloading and analysing Data"
+                os.mkdir(project_folder + 'generation'
+                        + str(Genetic_algorithm.generation))
             gen_folder = project_folder + 'generation' + str(
                     Genetic_algorithm.generation)
             md_folder = project_folder + 'generation' + str(
